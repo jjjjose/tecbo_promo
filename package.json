@@ -1,0 +1,19 @@
+{
+  "name": "tecbo_promo",
+  "version": "1.0.0",
+  "description": "Tema shoping para vender un producto o Landing Page",
+  "private": true,
+  "scripts": {
+    "tw": "tailwindcss build ./tailwind.css -o ./assets/css/app.css",
+    "mini": "purgecss --css ./assets/tw/app.css -con ./index.html -o ./assets/css/",
+    "mini2": "purgecss -c ./purgecss.config.js"
+  },
+  "keywords": [],
+  "author": "jjjjoseignacio@gmail.com",
+  "dependencies": {
+    "tailwindcss": "^1.3.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2"
+  }
+}
