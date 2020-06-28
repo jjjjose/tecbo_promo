@@ -1,20 +1,50 @@
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.color1 {
+  color: #445566;
 }
 body {
-  background-color: #053540;
+  background-color: #fafafa;
+}
+.text-mini {
+  font-size: 0.5rem;
 }
 .recuadro {
-  width: 250px;
-  height: 250px;
+  height: 230px;
+  background-color: #445566;
+  border-bottom-right-radius: 80px;
+  /* box-shadow: 15px 18px 25px -4px rgba(0, 0, 0, 0.555); */
 }
-.contenido {
-  color: #f2f2f2;
-  font-weight: 300;
-  /* margin-top: 30vh; */
+.recuadro > div {
+  height: 200px;
+  width: 200px;
+  /* margin-right: 120px; */
 }
-.logo {
-  border: #053540 1px solid;
-  top: 0;
-  right: -2.5rem;
+.bandluxe {
+  /* margin-top: -50px; */
+}
+.boton {
+  bottom: 0;
+  height: 50px;
+}
+.sombra {
+  box-shadow: 0px 12px 19px -4px #00000096;
+}
+@media (min-width: 1024px) {
+  .recuadro {
+    height: 100vh;
+    border-bottom-right-radius: 0;
+  }
+  .recuadro div {
+    height: 350px;
+    width: 350px;
+    /* margin-right: 120px; */
+  }
+  .text-mini {
+    font-size: 1.2rem;
+  }
+  .contenido > div {
+    width: 400px;
+  }
 }

@@ -2,41 +2,169 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="assets/img/logo_192px.png?v=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#445566" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets/img/logo_192px.png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Internet Portátil Ilimitado | Tecnologias Bolivia</title>
   </head>
-  <body class="h-auto w-screen flex flex-col items-center">
-    <div
-      class="fixed flex justify-center items-center bg-white rounded-full mt-6 logo"
-    >
-      <img class="h-8 my-2 ml-2 mr-12" src="assets/img/logoTecbo.svg" alt="" />
+  <body class="h-auto w-screen flex flex-col lg:flex-row">
+    <!-- logo -->
+    <div class="fixed z-50 mt-2 w-full flex justify-center">
+      <img
+        class="sombra h-8 lg:h-20 bg-white py-1 px-4 xs:px-0 rounded-lg border"
+        src="assets/img/logoTecbo.svg"
+        alt=""
+      />
     </div>
-    <div
-      class="recuadro bg-white rounded-lg mt-4 flex justify-center items-center"
-    >
-      <img class="w-10/12" src="assets/img/logoTecbo.svg" alt="" />
-    </div>
-
-    <div class="contenido h-auto w-full mt-5 px-4 divide-y divide-gray-400">
-      <h1 class="py-2 font-bold text-2xl tracking-tighter">
-        Internet Portátil Ilimitado
-      </h1>
-      <div class="py-2 flex justify-between items-center">
-        <span class="text-3xl font-medium text-green-400">1500 Bs.</span>
-        <div>+ un mes Gratis</div>
+    <!-- boton abajo -->
+    <!-- <div class="fixed w-full boton flex">
+      <span
+        class="text-white uppercase w-6/12 flex justify-center items-center bg-orange-700 font-semibold"
+        >Consulta</span
+      >
+      <span
+        class="text-white uppercase w-6/12 flex justify-center items-center bg-green-700 font-semibold"
+        >Comprar</span
+      >
+    </div> -->
+    <div class="recuadro lg:fixed w-full lg:w-6/12 flex lg:flex-col items-center justify-between lg:justify-center px-6">
+      <div
+        class="bg-contain bg-no-repeat bg-center"
+        style="background-image: url(assets/img/p530.png);"
+      ></div>
+      <div class="text-right lg:text-center flex items-center justify-end lg:justify-center">
+        <div class="bandluxe font-extrabold text-gray-400 text-xl lg:text-3xl leading-5 lg:leading-none lg:mt-3">
+          Bandluxe
+          <br />
+          p530
+          <br />
+          <p class="text-mini font-hairline leading-3 lg:leading-tight text-white mt-2">
+            Soporte WIFI
+            <br />
+            Equipo portable
+            <br />
+            Conexion hasta 10 usuarios
+            <br />
+            Bateria con duracion de 8 Horas
+            <br />
+            Cobertura en el campo y la ciudad
+          </p>
+        </div>
       </div>
-      <div class="py-2">
-        <span class="text-xl font-semibold">Descripcion del Servicio</span>
-        <p>
-          Servicio para todo el territorio Boliviano
+    </div>
+    <div class="hidden lg:block lg:w-6/12"></div>
+    <div class="w-full p-6 lg:px-0 contenido lg:w-6/12 lg:mt-20 lg:flex lg:flex-col lg:justify-center lg:items-center">
+      <div class="flex justify-between">
+        <h1 class="text-lg lg:text-3xl font-bold color1">
+          Internet <br />
+          Portátil Ilimitado
+        </h1>
+        <div class="flex items-center text-green-900">
+          <span class="text-right font-bold leading-3 text-xl"
+            >1450 Bs.
+            <br />
+            <span class="text-xs font-hairline">+ un mes gratis</span>
+            <br />
+            <span class="text-xs font-hairline">solo por Promoción</span>
+          </span>
+        </div>
+      </div>
+      <div class="mt-4 text-base font-hairline color1">
+        <div
+          class="border border-green-500 bg-green-100 font-normal text-green-900"
+        >
+          <div class="w-full bg-green-700 text-white font-semibold text-center">
+            Promoción
+          </div>
+          <div class="p-2">
+            Desde el 28 de Junio hasta el 31 de Julio del 2020 adquiere el
+            servicio de internet por solo 1450bs esto incluye:
+            <br />
+            <span class="text-xs">
+              - Equipo Bandluxe p530 o Zte mf910L.
+              <br />
+              - Un mes gratis del servicio de Internet con el plan Hogar hasta
+              12 megas de velocidad.
+              <br />
+              - Servicio portátil en ciudad y campo.
+              <br />
+              - No requiere Instalacion.
+            </span>
+            <br />
+            <span
+              class="bg-green-700 rounded-full text-white text-xs p-1 font-semibold float-right"
+              >Para mas info llamar al:
+              <span class="text-sm font-bold">60556606</span>
+            </span>
+          </div>
+        </div>
+        <p class="mt-8">
+          Navega en Internet donde tu quieras.
+          <br />Te damos la oportunidad de tener <br />Internet en casi toda
+          Bolivia. <br />
+          Viaja sin desconectarte de Internet. <br />Tenemos cobertura en la
+          ciudad en zonas alejadas, pueblos, provincias,etc.
+          <br />
+          <span class="text-indigo-800 font-medium"
+            >Consulta disponibilidad en tu region.</span
+          >
         </p>
+        <h2 class="mt-4 font-semibold">Planes mensuales</h2>
+        <div class="w-full flex justify-evenly my-2">
+          <div class="border w-6/12 flex flex-col items-center">
+            <span class="font-normal bg-gray-600 text-white w-full text-center"
+              >Hogar</span
+            >
+            <span class="font-semibold">350Bs./mes</span>
+            <span class="text-sm text-center font-normal pt-2"
+              >Velocidad de hasta 12mbps</span
+            >
+            <span class="text-center pt-2 text-sm"
+              >Cobertura: solo ciudades y pueblos en progreso de Bolivia</span
+            >
+          </div>
+          <div class="border w-6/12 flex flex-col items-center bg-gray-200">
+            <span class="font-normal bg-gray-900 text-white w-full text-center"
+              >Empresarial</span
+            >
+            <span class="font-semibold text-center">Consulta tu region.</span>
+            <span class="text-sm text-center font-normal pt-2"
+              >Velocidad de hasta 80mbps</span
+            >
+            <span class="text-center pt-2 text-sm"
+              >Cobertura al 90% del Territorio Boliviano</span
+            >
+          </div>
+        </div>
+        <h2 class="mt-4 font-semibold">Como comprar?</h2>
+        <div class="pt-2 w-full">
+          <p>
+            Para adquirir el servicio,
+            <br />
+            simplemente <span class="font-bold">llame al: 60556606</span> o
+            escribanos al Whatsapp haciendo click al boton de abajo.
+          </p>
+          <div
+            class="sombra mt-4 bg-green-900 text-white h-12 w-full uppercase font-extrabold rounded-full"
+          >
+            <a
+              href=""
+              target="_blank"
+              class=" w-full h-full flex justify-center items-center"
+              >Consultar</a
+            >
+          </div>
+        </div>
       </div>
+      <div class="boton"></div>
     </div>
   </body>
 </html>
