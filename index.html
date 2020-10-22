@@ -14,8 +14,157 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Internet Portátil Ilimitado | Tecnologias Bolivia</title>
+    <meta
+      name="description"
+      content="Internet ilimitdo para pueblos, y zonas en laderas."
+    />
+    <meta property="og:locale" content="es_BO" />
+
+    <!-- dominio del sitio -->
+    <link rel="canonical" href="https://internet.tecbo.org" />
+    <!-- nombre del sitio -->
+    <meta property="og:site_name" content="TecBo" />
+
+    <!-- tipo de publicacion -->
+    <meta property="og:type" content="website" />
+
+    <!-- tarjeta para facebook y twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- nombre del usuario de twitter -->
+    <!-- <meta name="twitter:site" content="@tecbo" />
+<meta name="twitter:creator" content="@tecbo" /> -->
+
+    <meta property="og:url" content="https://internet.tecbo.org" />
+    <meta property="og:title" content="Internet Portátil Ilimitado" />
+    <meta
+      property="og:description"
+      content="Internet ilimitdo para pueblos, y zonas en laderas."
+    />
+    <meta
+      property="og:image"
+      content="https://internet.tecbo.org/assets/img/internet.png"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LESZV1FG5H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LESZV1FG5H");
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(68599150, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/68599150"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "393470881669578");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=393470881669578&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body class="h-auto w-screen flex flex-col lg:flex-row">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v8.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="103111754797936"
+      theme_color="#ee7318"
+      logged_in_greeting="Hola Como estas, deseas internet en tu zona o pueblo?"
+      logged_out_greeting="Hola Como estas, deseas internet en tu zona o pueblo?"
+    ></div>
     <!-- logo -->
     <div class="fixed z-50 mt-2 w-full flex justify-center">
       <img
@@ -35,18 +184,26 @@
         >Comprar</span
       >
     </div> -->
-    <div class="recuadro lg:fixed w-full lg:w-6/12 flex lg:flex-col items-center justify-between lg:justify-center px-6">
+    <div
+      class="recuadro lg:fixed w-full lg:w-6/12 flex lg:flex-col items-center justify-between lg:justify-center px-6"
+    >
       <div
         class="bg-contain bg-no-repeat bg-center"
-        style="background-image: url(assets/img/p530.png);"
+        style="background-image: url(assets/img/p530.png)"
       ></div>
-      <div class="text-right lg:text-center flex items-center justify-end lg:justify-center">
-        <div class="bandluxe font-extrabold text-gray-400 text-xl lg:text-3xl leading-5 lg:leading-none lg:mt-3">
+      <div
+        class="text-right lg:text-center flex items-center justify-end lg:justify-center"
+      >
+        <div
+          class="bandluxe font-extrabold text-gray-400 text-xl lg:text-3xl leading-5 lg:leading-none lg:mt-3"
+        >
           Bandluxe
           <br />
           p530
           <br />
-          <p class="text-mini font-hairline leading-3 lg:leading-tight text-white mt-2">
+          <p
+            class="text-mini font-hairline leading-3 lg:leading-tight text-white mt-2"
+          >
             Soporte WIFI
             <br />
             Equipo portable
@@ -61,7 +218,9 @@
       </div>
     </div>
     <div class="hidden lg:block lg:w-6/12"></div>
-    <div class="w-full p-6 lg:px-0 contenido lg:w-6/12 lg:mt-20 lg:flex lg:flex-col lg:justify-center lg:items-center">
+    <div
+      class="w-full p-6 lg:px-0 contenido lg:w-6/12 lg:mt-20 lg:flex lg:flex-col lg:justify-center lg:items-center"
+    >
       <div class="flex justify-between">
         <h1 class="text-lg lg:text-3xl font-bold color1">
           Internet <br />
@@ -69,7 +228,7 @@
         </h1>
         <div class="flex items-center text-green-900">
           <span class="text-right font-bold leading-3 text-xl"
-            >1450 Bs.
+            >1350 Bs.
             <br />
             <span class="text-xs font-hairline">+ un mes gratis</span>
             <br />
@@ -84,9 +243,9 @@
           <div class="w-full bg-green-700 text-white font-semibold text-center">
             Promoción
           </div>
-          <div class="p-2">
-            Desde el 28 de Junio hasta el 31 de Julio del 2020 adquiere el
-            servicio de internet por solo 1450bs esto incluye:
+          <div class="p-2 font-semibold">
+            Octubre y Noviembre adquiere el servicio de internet por solo 1350bs
+            esto incluye:
             <br />
             <span class="text-xs">
               - Equipo Bandluxe p530 o Zte mf910L.
@@ -96,7 +255,7 @@
               <br />
               - Servicio portátil en ciudad y campo.
               <br />
-              - No requiere Instalacion.
+              - Instalacion gratis.
             </span>
             <br />
             <span
@@ -106,7 +265,8 @@
             </span>
           </div>
         </div>
-        <p class="mt-8">
+        <p class="mt-8 font-normal">
+          <span class="font-bold">Con TECNOLOGIAS BOLIVIA,</span>
           Navega en Internet donde tu quieras.
           <br />Te damos la oportunidad de tener <br />Internet en casi toda
           Bolivia. <br />
@@ -118,7 +278,7 @@
           >
         </p>
         <h2 class="mt-4 font-semibold">Planes mensuales</h2>
-        <div class="w-full flex justify-evenly my-2">
+        <div class="w-full flex justify-evenly my-2 font-normal">
           <div class="border w-6/12 flex flex-col items-center">
             <span class="font-normal bg-gray-600 text-white w-full text-center"
               >Hogar</span
@@ -135,7 +295,7 @@
             <span class="font-normal bg-gray-900 text-white w-full text-center"
               >Empresarial</span
             >
-            <span class="font-semibold text-center">Consulta tu region.</span>
+            <span class="font-semibold text-center">precio negocialble.</span>
             <span class="text-sm text-center font-normal pt-2"
               >Velocidad de hasta 80mbps</span
             >
@@ -145,7 +305,7 @@
           </div>
         </div>
         <h2 class="mt-4 font-semibold">Como comprar?</h2>
-        <div class="pt-2 w-full">
+        <div class="pt-2 w-full font-normal">
           <p>
             Para adquirir el servicio,
             <br />
@@ -156,10 +316,11 @@
             class="sombra mt-4 bg-green-900 text-white h-12 w-full uppercase font-extrabold rounded-full"
           >
             <a
-              href=""
+              href="
+              https://wa.me/59160556606?text=Mas%20informacion%20sobre%20el%20servicio%20de%20internet"
               target="_blank"
-              class=" w-full h-full flex justify-center items-center"
-              >Consultar</a
+              class="w-full h-full flex justify-center items-center"
+              >Comprar</a
             >
           </div>
         </div>
