@@ -316,6 +316,7 @@
             class="sombra mt-4 bg-green-900 text-white h-12 w-full uppercase font-extrabold rounded-full"
           >
             <a
+              id="comprar"
               href="
               https://wa.me/59160556606?text=Mas%20informacion%20sobre%20el%20servicio%20de%20internet"
               target="_blank"
@@ -327,5 +328,13 @@
       </div>
       <div class="boton"></div>
     </div>
+    <script>
+      const btn = document.getElementById("comprar");
+      btn.addEventListener("click", click);
+      function click() {
+        console.log("alguien quiere comprar.");
+        fbq("track", "Purchase");
+      }
+    </script>
   </body>
 </html>
