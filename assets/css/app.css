@@ -803,6 +803,10 @@ video {
   font-size: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
